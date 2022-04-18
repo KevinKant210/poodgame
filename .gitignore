@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Folder view configuration files (MAC)
+.DS_Store
+Desktop.ini
