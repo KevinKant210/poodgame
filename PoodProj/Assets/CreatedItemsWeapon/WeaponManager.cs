@@ -26,8 +26,11 @@ public class WeaponManager : MonoBehaviour
     public GameObject Weapon1;
     
     public GameObject Weapon2;
+    
+    private Vector3 wep2Offset = new Vector3((float) 0,(float) -0.05,(float) -0.2);
     public GameObject Weapon3;
 
+    private Vector3 wep3Offset = new Vector3((float) 0.02,(float) -0.243,(float) 0.1);
     private int currMagSize;
     
     private float shootTimer = 0;
@@ -37,9 +40,9 @@ public class WeaponManager : MonoBehaviour
         
         //logic on start to determine which weapon to init
         if(weaponNum == 3){
-            currWeapon = Instantiate(Weapon3,this.transform.position,this.transform.rotation,this.transform);
+            currWeapon = Instantiate(Weapon3,this.transform.position + wep3Offset,this.transform.rotation,this.transform);
         }else if (weaponNum == 2){
-            currWeapon = Instantiate(Weapon2,this.transform.position,this.transform.rotation,this.transform);
+            currWeapon = Instantiate(Weapon2,wep2Offset + this.transform.position,this.transform.rotation,this.transform);
         }else{
             currWeapon = Instantiate(Weapon1,this.transform.position,this.transform.rotation,this.transform);
         }
