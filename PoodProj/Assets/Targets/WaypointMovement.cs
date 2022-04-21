@@ -11,12 +11,17 @@ public class WaypointMovement : MonoBehaviour
 
     [SerializeField] private float distanceThreshold = 0.1f;
 
+    private Animator animator;
+
     // Current target waypoint object is moving to
     private Transform currentWaypoint;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Get animator controller
+        animator = GetComponent<Animator>();
+        
         //Get the object to start in the first waypoint 
         currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
         transform.position = currentWaypoint.position;
@@ -29,11 +34,13 @@ public class WaypointMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("IsMoving", true);
         transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, moveSpeed * Time.deltaTime);
         if(Vector3.Distance(transform.position, currentWaypoint.position) < distanceThreshold)
         {
             currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
             transform.LookAt(currentWaypoint);
         }
+        
     }
 }
