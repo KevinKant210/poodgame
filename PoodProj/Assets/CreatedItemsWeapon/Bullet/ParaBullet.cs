@@ -40,13 +40,17 @@ public class ParaBullet : MonoBehaviour
         
         
         if(RayBetweenPoints(currentPoint,nextPoint,out hit)){
+
+            bool hitEnemy = false;
             if(hit.collider.tag == "EnemyHead"){
                 Debug.Log("Headshot!");
                 PlayerPrefs.SetInt("currScore", PlayerPrefs.GetInt("currScore") + 100);
+                hitEnemy = true;
             }
 
             if(hit.collider.tag == "EnemyBody"){
                 PlayerPrefs.SetInt("currScore", PlayerPrefs.GetInt("currScore") + 50);
+                hitEnemy = true;
             }
 
             if(hit.collider.tag == "Ally"){
@@ -58,9 +62,9 @@ public class ParaBullet : MonoBehaviour
 
             Destroy(gameObject);
             
-            if(hit.collider.tag !="Ally"){
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
+           if(hitEnemy == true){
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+           }
             
         }
 
