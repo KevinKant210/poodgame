@@ -36,8 +36,20 @@ public class ParaBullet : MonoBehaviour
 
         Vector3 currentPoint = FindPointOnParab(currentTime);
         Vector3 nextPoint = FindPointOnParab(nextTime);
-
+        
+        
         if(RayBetweenPoints(currentPoint,nextPoint,out hit)){
+            if(hit.collider.tag == "EnemyHead"){
+                Debug.Log("Headshot!");
+            }
+
+            if(hit.collider.tag == "EnemyBody"){
+                Debug.Log("BodyShot!");
+            }
+
+            if(hit.collider.tag == "Ally"){
+                Debug.Log("Ally");
+            }
             Destroy(gameObject);
         }
 
