@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class ParaBullet : MonoBehaviour
@@ -41,16 +42,26 @@ public class ParaBullet : MonoBehaviour
         if(RayBetweenPoints(currentPoint,nextPoint,out hit)){
             if(hit.collider.tag == "EnemyHead"){
                 Debug.Log("Headshot!");
+                PlayerPrefs.SetInt("currScore", PlayerPrefs.GetInt("currScore") + 100);
             }
 
             if(hit.collider.tag == "EnemyBody"){
-                Debug.Log("BodyShot!");
+                PlayerPrefs.SetInt("currScore", PlayerPrefs.GetInt("currScore") + 50);
             }
 
             if(hit.collider.tag == "Ally"){
-                Debug.Log("Ally");
+                PlayerPrefs.SetInt("currScore", PlayerPrefs.GetInt("currScore") - 100);
             }
+            if(PlayerPrefs.GetInt("highScore") < PlayerPrefs.GetInt("currScore")){
+                PlayerPrefs.SetInt("highScore",PlayerPrefs.GetInt("currScore"));
+            }
+
             Destroy(gameObject);
+            
+            if(hit.collider.tag !="Ally"){
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            
         }
 
     }

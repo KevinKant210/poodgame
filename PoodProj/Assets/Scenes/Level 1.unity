@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6660326, g: 0.75520205, b: 0.6889266, a: 1}
+  m_IndirectSpecularColor: {r: 0.6660357, g: 0.7552061, b: 0.6889304, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2307,10 +2307,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2063722336, guid: 0d9413e7e542c9a4ab4f00cc7b13f954, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063722336, guid: 0d9413e7e542c9a4ab4f00cc7b13f954, type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 1793297226}
     - target: {fileID: 3619034245630778281, guid: 0d9413e7e542c9a4ab4f00cc7b13f954,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 3619034245630778281, guid: 0d9413e7e542c9a4ab4f00cc7b13f954,
         type: 3}
@@ -2413,6 +2421,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypointSize: 1
+--- !u!4 &969744639 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3619034245630778281, guid: 0d9413e7e542c9a4ab4f00cc7b13f954,
+    type: 3}
+  m_PrefabInstance: {fileID: 939190978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &982726633
 GameObject:
   m_ObjectHideFlags: 0
@@ -3862,14 +3876,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793297224}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5853106, y: 2.36112, z: -2.9889803}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 3.1706212, y: 4.38824, z: -1.5800395}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 926361463}
   - {fileID: 1230505816}
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 969744639}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1793297226
 MonoBehaviour:
