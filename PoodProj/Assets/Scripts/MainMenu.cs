@@ -9,4 +9,8 @@ public class MainMenu : MonoBehaviour {
         PlayerPrefs.SetInt("currScore", 0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void quitGame()  {
+        Application.Quit();
+    }
 }
