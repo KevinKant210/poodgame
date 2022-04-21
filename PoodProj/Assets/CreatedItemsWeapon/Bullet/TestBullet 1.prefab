@@ -19,6 +19,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5481131208548253871, guid: 5e2a1164dc632754fb8914ce621c95c7,
         type: 3}
+      propertyPath: m_TagString
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481131208548253871, guid: 5e2a1164dc632754fb8914ce621c95c7,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
