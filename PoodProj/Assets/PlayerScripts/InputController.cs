@@ -12,11 +12,15 @@ public class ZoomInputEvent : UnityEvent<float>{}
 [Serializable]
 public class ShootInputEvent : UnityEvent<float>{}
 
+[Serializable]
+public class ReloadInputEvent : UnityEvent<float>{}
+
 public class InputController : MonoBehaviour
 {
     Controls controls;
     public ZoomInputEvent zoomInputEvent;
     public ShootInputEvent shootInputEvent;
+    public ReloadInputEvent reloadInputEvent;
 
     //instanciates controls
     private void Awake()
@@ -33,6 +37,9 @@ public class InputController : MonoBehaviour
 
         controls.Player.Shoot.performed += OnShootPerformed;
         controls.Player.Shoot.canceled += OnShootPerformed;
+
+        controls.Player.Reload.performed += OnReloadPerformed;
+        controls.Player.Reload.canceled += OnReloadPerformed;
     }
     
     
@@ -50,5 +57,12 @@ public class InputController : MonoBehaviour
         //invoke the ShootInputEvent so the player character reaction is also working as an event based action
         shootInputEvent.Invoke(shootInput);
         Debug.Log($"Shoot Input:{shootInput}");
+    }
+
+    private void OnReloadPerformed(InputAction.CallbackContext context)
+    {
+        float reloadInput = context.ReadValue<float>();
+        reloadInputEvent.Invoke(reloadInput);
+        Debug.Log($"Reload Input:{reloadInput}");
     }
 }

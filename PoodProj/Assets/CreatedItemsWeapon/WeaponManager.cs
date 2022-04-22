@@ -64,11 +64,12 @@ public class WeaponManager : MonoBehaviour
     {   
         if(shootTimer > 0) shootTimer -= Time.deltaTime*currWeaponStats.fireRate;
         //temporary for testing
-        getInput();
+        //getInput();
     }
 
     //temporary function for testing
-    private void getInput(){
+    //outdated input reciever
+    /*private void getInput(){
 
         var mouse = Mouse.current;
         var keyboard = Keyboard.current;
@@ -83,7 +84,7 @@ public class WeaponManager : MonoBehaviour
         }
         
         
-    }
+    }*/
 
     
     //function that shoots the curretn weapon
@@ -117,6 +118,23 @@ public class WeaponManager : MonoBehaviour
         currMagSize = currWeaponStats.magazineSize;
     }
 
+    //takes shoot input from the game manager and determines if the gun should shoot
+    public void OnShootInput(float shootInput)
+    {
+        if(shootInput == 1)
+        {
+            Shoot();
+        }
+    }
+    public void OnReloadInput(float reloadInput)
+    {
+        if(reloadInput == 1)
+        {
+            currWeaponStats.magSound.Play();
+            Reload();
+        }
+    }
+    
     public void OnZoomInput(float zoomInput)
     {
         

@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "1afdbaba-cee5-4331-b877-a0950cedbd9e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -69,12 +78,12 @@
                 },
                 {
                     "name": "",
-                    "id": "23210b8b-8d17-4d63-ae3a-18d456e3d4d0",
-                    "path": "<Touchscreen>/primaryTouch/delta",
+                    "id": "2306f40d-1df6-4322-9d07-7188407fa4d9",
+                    "path": "<Keyboard>/#(R)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Look",
+                    "action": "Reload",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
