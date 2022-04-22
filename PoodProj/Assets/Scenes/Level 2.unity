@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6660357, g: 0.7552061, b: 0.6889304, a: 1}
+  m_IndirectSpecularColor: {r: 0.66603297, g: 0.7552029, b: 0.6889285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -324,7 +324,7 @@ PrefabInstance:
     - target: {fileID: 4008947191534483310, guid: 73315d1ac8e3e8d4a80125b153a8366f,
         type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4560686589325446447, guid: 73315d1ac8e3e8d4a80125b153a8366f,
         type: 3}
@@ -2334,6 +2334,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllySet
       objectReference: {fileID: 0}
+    - target: {fileID: 8339722658635538501, guid: 2718085431af426448ee98143d80d327,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2718085431af426448ee98143d80d327, type: 3}
 --- !u!4 &753239212 stripped
@@ -3584,6 +3589,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AllySet (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339722658635538501, guid: 2718085431af426448ee98143d80d327,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2718085431af426448ee98143d80d327, type: 3}
