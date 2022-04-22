@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.66603297, g: 0.7552029, b: 0.6889285, a: 1}
+  m_IndirectSpecularColor: {r: 0.6660357, g: 0.7552061, b: 0.6889304, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -223,7 +223,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2122467230}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2010378654}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84b74716482faa949a184d1008e07f48, type: 3}
@@ -1551,7 +1551,7 @@ PrefabInstance:
         type: 3}
       propertyPath: zoomInputEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 75091531}
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
       propertyPath: shootInputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6620,6 +6620,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &2010378654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3407199573705958716, guid: 1dd2fb01a4a68794191e533676ff8f94,
+    type: 3}
+  m_PrefabInstance: {fileID: 2122467230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2010378656
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010378654}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb777a5a12dead24b93dfdb4bf0050b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2016114391
 GameObject:
   m_ObjectHideFlags: 0
@@ -7056,6 +7081,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5075759264727743591, guid: 1dd2fb01a4a68794191e533676ff8f94,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2010378656}
     - target: {fileID: 5734296367665530076, guid: 1dd2fb01a4a68794191e533676ff8f94,
         type: 3}
       propertyPath: m_Name
