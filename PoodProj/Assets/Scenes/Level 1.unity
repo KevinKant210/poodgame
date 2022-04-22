@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.66464645, g: 0.7587689, b: 0.71026325, a: 1}
+  m_IndirectSpecularColor: {r: 0.6646497, g: 0.7587726, b: 0.7102655, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,7 +130,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 19775470}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 780045927}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84b74716482faa949a184d1008e07f48, type: 3}
@@ -207,6 +207,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.621
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075759264727743591, guid: 1dd2fb01a4a68794191e533676ff8f94,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 780045929}
+    - target: {fileID: 5312321137892525658, guid: 1dd2fb01a4a68794191e533676ff8f94,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.157
       objectReference: {fileID: 0}
     - target: {fileID: 5734296367665530076, guid: 1dd2fb01a4a68794191e533676ff8f94,
         type: 3}
@@ -2371,6 +2381,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9526b7c12770f14aa830082aa6d9b45, type: 3}
+--- !u!1 &780045927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3407199573705958716, guid: 1dd2fb01a4a68794191e533676ff8f94,
+    type: 3}
+  m_PrefabInstance: {fileID: 19775470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &780045929
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780045927}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb777a5a12dead24b93dfdb4bf0050b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &851693784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +2818,7 @@ PrefabInstance:
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
       propertyPath: zoomInputEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
@@ -2823,7 +2858,7 @@ PrefabInstance:
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
       propertyPath: zoomInputEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: 
+      value: OnZoomInput
       objectReference: {fileID: 0}
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
@@ -2854,6 +2889,11 @@ PrefabInstance:
         type: 3}
       propertyPath: reloadInputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: WeaponManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
+        type: 3}
+      propertyPath: zoomInputEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
