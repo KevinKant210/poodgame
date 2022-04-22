@@ -468,21 +468,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 8242569439059820414}
---- !u!114 &8339722658635538501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7656589713666678649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49449474557c3fb4d9ce3433a4ee2591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints: {fileID: 4879835563373493781}
-  moveSpeed: 5
-  distanceThreshold: 0.1
 --- !u!114 &2905317261677574931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,6 +546,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 8242569439059820414}
+--- !u!114 &8339722658635538501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7656589713666678649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49449474557c3fb4d9ce3433a4ee2591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: {fileID: 4879835563373493781}
+  moveSpeed: 3
+  distanceThreshold: 0.1
 --- !u!114 &1024081508380769632
 MonoBehaviour:
   m_ObjectHideFlags: 0
