@@ -124,6 +124,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &1487468 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5075759264727743591, guid: 1dd2fb01a4a68794191e533676ff8f94,
+    type: 3}
+  m_PrefabInstance: {fileID: 19775470}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b74716482faa949a184d1008e07f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &15093807
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +187,7 @@ PrefabInstance:
         type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 1954812323}
+      objectReference: {fileID: 0}
     - target: {fileID: 3304591008347806366, guid: 1dd2fb01a4a68794191e533676ff8f94,
         type: 3}
       propertyPath: weaponNum
@@ -2771,7 +2783,7 @@ PrefabInstance:
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
       propertyPath: zoomInputEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
@@ -2787,17 +2799,17 @@ PrefabInstance:
         type: 3}
       propertyPath: zoomInputEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1954812324}
+      objectReference: {fileID: 1487468}
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
       propertyPath: shootInputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1954812324}
+      objectReference: {fileID: 1487468}
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
       propertyPath: reloadInputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1954812324}
+      objectReference: {fileID: 1487468}
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
       propertyPath: zoomInputEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -2811,7 +2823,7 @@ PrefabInstance:
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
       propertyPath: zoomInputEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnZoomInput
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8716631413443897619, guid: 22e2f642a27f91a4da4db1da294bf080,
         type: 3}
@@ -4644,43 +4656,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923515940}
   m_Mesh: {fileID: 4300000, guid: 391ef46e275c80b408f222be809688a5, type: 3}
---- !u!1 &1954812321 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4964147519129961413, guid: 1dd2fb01a4a68794191e533676ff8f94,
-    type: 3}
-  m_PrefabInstance: {fileID: 19775470}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1954812323
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954812321}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bb777a5a12dead24b93dfdb4bf0050b5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1954812324 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3304591008347806366, guid: 1dd2fb01a4a68794191e533676ff8f94,
-    type: 3}
-  m_PrefabInstance: {fileID: 19775470}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954812321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84b74716482faa949a184d1008e07f48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1976698267
 GameObject:
   m_ObjectHideFlags: 0
