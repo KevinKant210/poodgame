@@ -25,7 +25,8 @@ public class CharacterSelection : MonoBehaviour
 	}
 
 	public void StartGame()
-	{
+	{	
+		PlayerPrefs.SetInt("currWeapon", selectedCharacter);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }

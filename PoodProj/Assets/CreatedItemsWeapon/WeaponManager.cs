@@ -22,7 +22,7 @@ public class WeaponManager : MonoBehaviour
     private WeaponFace.weaponData currWeaponStats;
 
     //this holds what weapon is selected ( currently public so we can easily test all three guns)
-    public int weaponNum;
+    private int weaponNum;
 
     //all of these are the holders to the weapon prefabs
     public GameObject Weapon1;
@@ -39,7 +39,7 @@ public class WeaponManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        weaponNum = PlayerPrefs.GetInt("currWeapon") + 1;
         //logic on start to determine which weapon to init
         if(weaponNum == 3){
             currWeapon = Instantiate(Weapon3,this.transform.position + wep3Offset,this.transform.rotation,this.transform);
