@@ -78,6 +78,7 @@ public class WeaponManager : MonoBehaviour
         }
 
         if(keyboard.rKey.wasReleasedThisFrame){
+            currWeaponStats.magSound.Play();
             Reload();
         }
         

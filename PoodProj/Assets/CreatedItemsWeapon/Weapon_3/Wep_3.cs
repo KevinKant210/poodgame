@@ -6,6 +6,8 @@ using UnityEngine;
 public class Wep_3 : MonoBehaviour,WeaponFace
 {   
     public AudioSource shootSound;
+
+    public AudioSource magSound;
     private Transform shootSource;
     public WeaponFace.weaponData weaponStats;
     
@@ -31,6 +33,8 @@ public class Wep_3 : MonoBehaviour,WeaponFace
         shootSource = this.gameObject.transform.Find("ShootSource");
 
         weaponStats.shootSound = this.shootSound;
+
+        weaponStats.magSound = this.magSound;
 
         weaponStats.bulletLifetime = 5;
 

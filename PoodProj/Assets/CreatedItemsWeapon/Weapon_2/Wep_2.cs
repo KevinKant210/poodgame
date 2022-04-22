@@ -6,6 +6,8 @@ using UnityEngine;
 public class Wep_2 : MonoBehaviour,WeaponFace
 {   
     public AudioSource shootSound;
+
+    public AudioSource magSound;
     private Transform shootSource;
     public WeaponFace.weaponData weaponStats;
     
@@ -32,6 +34,8 @@ public class Wep_2 : MonoBehaviour,WeaponFace
 
         weaponStats.shootSound = this.shootSound;
 
+        weaponStats.magSound = this.magSound;
+
         weaponStats.bulletLifetime = 5;
 
         weaponStats.fireRate = (float) 1.5;
@@ -43,6 +47,8 @@ public class Wep_2 : MonoBehaviour,WeaponFace
         weaponStats.gravityForce = (float) 9.8;
 
         weaponStats.shootSource = this.shootSource;
+
+
 
         weaponStats.shootSpeed = 300;
 
