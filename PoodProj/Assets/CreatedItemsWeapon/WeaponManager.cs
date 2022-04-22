@@ -7,6 +7,8 @@ public class WeaponManager : MonoBehaviour
 {   
 
     //bulletPref is the preface object that we spawn the bullet from
+
+    public Animator animator;
     public GameObject bulletPref;
 
     private Transform shootSource;
@@ -112,6 +114,50 @@ public class WeaponManager : MonoBehaviour
     //reload to fill magazine
     public void Reload(){
         currMagSize = currWeaponStats.magazineSize;
+    }
+
+    public void OnZoomInput(float zoomInput)
+    {
+        
+        //sets the FOV to the default max and then checks if the zoom button is pressed
+        //if the zoom button is pressed, then it sets the FOV to the zoom FOV
+        if(zoomInput == 1){
+            animator.SetBool("isScoped",true);
+            StartCoroutine(onScoped());
+            Debug.Log("True");
+        }else{
+            
+            Render();
+            animator.SetBool("isScoped",false);
+            
+            Debug.Log("False");
+        }
+        
+    }
+
+    IEnumerator onScoped(){
+        yield return new WaitForSeconds(.15f);
+        
+        unRender();
+        
+    }
+
+    private void unRender(){
+        
+        MeshRenderer[] render = currWeapon.GetComponentsInChildren<MeshRenderer>();
+
+        foreach(MeshRenderer mesh in render){
+            mesh.enabled = false;
+        }
+        
+    }
+
+    private void Render(){
+        MeshRenderer[] render = currWeapon.GetComponentsInChildren<MeshRenderer>();
+
+        foreach(MeshRenderer mesh in render){
+            mesh.enabled = true;
+        }
     }
 
 

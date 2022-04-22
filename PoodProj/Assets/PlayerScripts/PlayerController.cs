@@ -31,7 +31,9 @@ public class PlayerController : MonoBehaviour
         if (zoomInput == 1)
         {
             vcam.m_Lens.FieldOfView = minFOV;
-            scopeOverlay.SetActive(true);
+            StartCoroutine(onScoped());
+        }else{
+            scopeOverlay.SetActive(false);
         }
         Debug.Log($"Player Controller Zoom Input:{zoomInput}");
     }
@@ -42,4 +44,11 @@ public class PlayerController : MonoBehaviour
        
         Debug.Log($"Player Controller Shoot Input:{shootInput}");
     }
+
+    IEnumerator onScoped(){
+        yield return new WaitForSeconds(.15f);
+        scopeOverlay.SetActive(true);
+    }
+
+
 }
