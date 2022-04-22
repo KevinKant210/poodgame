@@ -602,6 +602,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     1: STARTER_ASSETS_PACKAGES_CHECKED
     4: STARTER_ASSETS_PACKAGES_CHECKED
+    7: STARTER_ASSETS_PACKAGES_CHECKED
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
