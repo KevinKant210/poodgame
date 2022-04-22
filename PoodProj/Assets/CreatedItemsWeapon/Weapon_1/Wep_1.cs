@@ -7,6 +7,7 @@ public class Wep_1 : MonoBehaviour,WeaponFace
     //this is just an empty where the bullet spawns from (unique for each weapon)
 
     public AudioSource shootSound;
+    public AudioSource magSound;
     private Transform shootSource;
 
     //struct that contains all the stats as defined in weapon face Interface
@@ -36,6 +37,8 @@ public class Wep_1 : MonoBehaviour,WeaponFace
         
         //this line finds the unique ShootSource empty child attatched to each gun
         shootSource = this.gameObject.transform.Find("ShootSource");
+
+        weaponStats.magSound = this.magSound;
 
         weaponStats.fireRate = 1;
 

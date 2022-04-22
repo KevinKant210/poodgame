@@ -11,6 +11,8 @@ public interface WeaponFace
          //holder for the audio that the weapon will use when fired
         public AudioSource shootSound;
 
+        public AudioSource magSound;
+
         //greater the number the faster the fire rate
         public float fireRate;
         public float zoomLevel;
